@@ -1,0 +1,4 @@
+name:		IO-Handle-Rewind
+version:	0.01
+license:	perl
+requires:	IO::Handle
