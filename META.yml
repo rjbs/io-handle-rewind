@@ -1,5 +1,5 @@
 ---
 name: IO-Handle-Rewind
-version: 0.01
+version: 0.02
 license: perl
 requires: IO::Handle

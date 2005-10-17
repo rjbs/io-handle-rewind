@@ -4,7 +4,7 @@ IO::Handle::Rewind - pretend to rewind filehandles
 
 =head1 VERSION
 
- 0.01
+ 0.02
 
 =head1 DESCRIPTION
 
@@ -44,7 +44,7 @@ use strict;
 use Carp qw(croak);
 use base qw(Class::Accessor);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 __PACKAGE__->mk_accessors(qw(rewound obj));
 
