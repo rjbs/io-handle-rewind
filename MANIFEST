@@ -1,9 +1,10 @@
 Changes
 MANIFEST
-META.yml # Will be created by "make dist"
+META.yml
 Makefile.PL
 README
 lib/IO/Handle/Rewind.pm
 t/00-load.t
 t/pod-coverage.t
 t/pod.t
+t/rewind.t

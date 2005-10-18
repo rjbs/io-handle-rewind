@@ -4,7 +4,7 @@ IO::Handle::Rewind - pretend to rewind filehandles
 
 =head1 VERSION
 
- 0.02
+0.03
 
 =head1 DESCRIPTION
 
@@ -36,6 +36,20 @@ Despite the name, this does not seek the filehandle.
 
 See documentation for C<< rewind >>.
 
+=head1 SEE ALSO
+
+L<IO::Handle>
+
+=head1 AUTHOR
+
+Hans Dieter Pearcey <hdp@icgroup.com>
+
+=head1 LICENSE
+
+Copyright (C) 2005, Hans Dieter Pearcey.
+
+Available under the same terms as Perl itself.
+
 =cut
 
 package IO::Handle::Rewind;
@@ -44,7 +58,7 @@ use strict;
 use Carp qw(croak);
 use base qw(Class::Accessor);
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 __PACKAGE__->mk_accessors(qw(rewound obj));
 
