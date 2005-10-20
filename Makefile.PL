@@ -10,6 +10,7 @@ WriteMakefile(
     PL_FILES            => {},
     PREREQ_PM => {
         'Test::More' => 0,
+	'Class::Accessor' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'IO-Handle-Rewind-*' },
