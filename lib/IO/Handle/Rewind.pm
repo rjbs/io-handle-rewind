@@ -1,10 +1,20 @@
+package IO::Handle::Rewind;
+
+use strict;
+use Carp qw(croak);
+use base qw(Class::Accessor);
+
 =head1 NAME
 
 IO::Handle::Rewind - pretend to rewind filehandles
 
 =head1 VERSION
 
-0.04
+0.05
+
+=cut
+
+our $VERSION = '0.05';
 
 =head1 DESCRIPTION
 
@@ -51,14 +61,6 @@ Copyright (C) 2005, Hans Dieter Pearcey.
 Available under the same terms as Perl itself.
 
 =cut
-
-package IO::Handle::Rewind;
-
-use strict;
-use Carp qw(croak);
-use base qw(Class::Accessor);
-
-our $VERSION = '0.04';
 
 __PACKAGE__->mk_accessors(qw(rewound obj));
 

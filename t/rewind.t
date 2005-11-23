@@ -3,7 +3,6 @@
 use strict;
 use warnings;
 
-use ICG::Handy qw(readfile writefile);
 use Test::More 'no_plan';
 use IO::File;
 
@@ -11,7 +10,9 @@ use_ok("IO::Rewind");
 
 my $out = "./t/rewind.out";
 
-writefile($out, "a\nb\n");
+my $writer = IO::File->new($out, 'w');
+$writer->print("a\nb\n");
+$writer->close;
 
 my $fh = IO::File->new($out, 'r');
 
