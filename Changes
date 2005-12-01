@@ -9,3 +9,5 @@ Revision history for IO-Handle-Rewind
 0.04	More packaging problems.
 
 0.05	Remove bogus test dependency; remove META.yml
+
+0.06    Tests referred to an old version of the module name.

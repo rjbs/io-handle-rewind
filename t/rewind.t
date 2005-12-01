@@ -6,7 +6,7 @@ use warnings;
 use Test::More 'no_plan';
 use IO::File;
 
-use_ok("IO::Rewind");
+use_ok("IO::Handle::Rewind");
 
 my $out = "./t/rewind.out";
 
@@ -18,8 +18,8 @@ my $fh = IO::File->new($out, 'r');
 
 is(<$fh>, "a\n", 'first line matches');
 
-my $re = IO::Rewind->new($fh);
-isa_ok($re, 'IO::Rewind', 'created rewind object');
+my $re = IO::Handle::Rewind->new($fh);
+isa_ok($re, 'IO::Handle::Rewind', 'created rewind object');
 
 $re->rewind("a\n");
 is($re->getline, "a\n", 'got rewound line');
